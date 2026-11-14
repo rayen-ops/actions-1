@@ -5,6 +5,8 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v7.0.1
             - name: Welcome message
               run: echo "First gihtub msg"
             - name: List files
