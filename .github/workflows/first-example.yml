@@ -7,10 +7,9 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v7.0.1
-            - name: Welcome message
-              run: echo "First gihtub msg"
-            - name: List files
-              run: ls
-            - name:  Read files
-              run: cat README.md
+            - name: Testing step
+              run: | 
+                echo "First gihtub msg"
+                ls
+                cat README.md
         
