@@ -12,4 +12,5 @@ jobs:
                 echo "First gihtub msg"
                 ls
                 cat README.md
-        
+            - name: Generate ASCII artwork
+              run: cowsay -f dragon "run for a cover" dragon.txt
