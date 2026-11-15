@@ -22,8 +22,8 @@ jobs:
       - name: Verify file exists
         run: test -f dragon.txt
   
-  test_job_3:
-    needs: build_job_2
+  deploy_job_3:
+    needs: test_job_2
     runs-on: ubuntu-latest
     steps:
       - name: Display file
